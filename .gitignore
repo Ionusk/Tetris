@@ -1,0 +1,10 @@
+# fișiere compilate
+*.exe
+*.o
+*.obj
+*.dll
+
+# directoare temporare IDE (opțional)
+.vscode/
+.idea/
+*.user
