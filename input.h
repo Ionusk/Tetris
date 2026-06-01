@@ -7,6 +7,8 @@ typedef struct {
     bool right;
     bool down;
     bool rotate;
+    float rightHold;
+    float leftHold;
 } Input;
 
 void UpdateInput(Input* input);
