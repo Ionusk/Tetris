@@ -7,34 +7,9 @@
 
 typedef enum {
     MENU,
-    GAME
+    GAME,
+    GAME_OVER
 } GameState;
-
-
-static GameState state;
-static Rectangle startButton;
-static Input input;
-
-static int grid[LINII][COLOANE];
-
-static int blockX;
-static int blockY;
-
-static float fallTimer = 0;
-static float fallSpeed = 0.6f;
-
-static int pieces[7][4][4] = {
-    { {1,1,0,0},{1,1,0,0},{0,0,0,0},{0,0,0,0} }, // O
-    { {0,0,0,0},{1,1,1,1},{0,0,0,0},{0,0,0,0} }, // I
-    { {0,1,0,0},{1,1,1,0},{0,0,0,0},{0,0,0,0} }, // T
-    { {0,0,1,0},{1,1,1,0},{0,0,0,0},{0,0,0,0} }, // L
-    { {1,0,0,0},{1,1,1,0},{0,0,0,0},{0,0,0,0} }, // J
-    { {0,1,1,0},{1,1,0,0},{0,0,0,0},{0,0,0,0} }, // S
-    { {1,1,0,0},{0,1,1,0},{0,0,0,0},{0,0,0,0} }  // Z
-};
-
-static int currentPiece[4][4];
-static int pieceType;
 
 void ScreenInit();
 void ScreenUpdate();

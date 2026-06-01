@@ -13,4 +13,4 @@ typedef struct {
 
 void UpdateInput(Input* input);
 
-#endif 
+#endif

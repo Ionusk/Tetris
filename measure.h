@@ -3,18 +3,17 @@
 
 #define COLOANE 10
 #define LINII 20
+#define CELL_SIZE 24  
 
-#define CELL_SIZE 30
-
-//marimea tablei
+//construiesc tabla
 #define PLAY_WIDTH  (COLOANE * CELL_SIZE)
 #define PLAY_HEIGHT (LINII * CELL_SIZE)
 
-#define SCREEN_WIDTH  900
-#define SCREEN_HEIGHT 600
+#define SCREEN_WIDTH  750   
+#define SCREEN_HEIGHT 620   
 
-// centrarea 
-#define PLAY_X ((SCREEN_WIDTH - PLAY_WIDTH) / 2)
-#define PLAY_Y 60
+//cordonatele de unde programul incepe sa construiasca tabla
+#define PLAY_X 80           
+#define PLAY_Y 50
 
 #endif
